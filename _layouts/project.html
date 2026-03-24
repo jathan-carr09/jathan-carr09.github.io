@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<section class="section" style="padding-top: 10rem;">
+  <div class="container">
+    <a href="{{ '/#projects' | relative_url }}" class="btn btn-outline" style="margin-bottom: 3rem; display: inline-flex;">
+      ← Back to Projects
+    </a>
+
+    <span class="section-label">Project</span>
+    <h1 style="margin-bottom: 1.5rem;">{{ page.title }}</h1>
+    
+    {% if page.tags %}
+    <div class="project-tags" style="margin-bottom: 2rem;">
+      {% for tag in page.tags %}
+        <span class="tag">{{ tag }}</span>
+      {% endfor %}
+    </div>
+    {% endif %}
+
+    <div class="divider"></div>
+
+    <div style="max-width: 800px; margin-top: 2rem;">
+      {{ content }}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,38 @@
+title: Jathan Carr
+description: Engineering & Cybersecurity Student | Developer | Creator
+url: "https://jathancarr.github.io"
+baseurl: ""
+
+author:
+  name: Jathan Carr
+  email: jathan.carr@ascte.org
+  phone: 256-616-2696
+  location: Trinity, AL
+  school: Alabama School of Cyber Technology and Engineering (ASCTE)
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: project
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - README.md
