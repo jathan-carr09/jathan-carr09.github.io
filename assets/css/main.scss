@@ -29,16 +29,24 @@
 
 html { scroll-behavior: smooth; }
 
+/* ===== BASE & TYPOGRAPHY ===== */
 body {
+  font-family: var(--font-ui); /* Changed from var(--font-body) to var(--font-ui) to match existing variable */
   background: var(--black);
   color: var(--white);
-  font-family: var(--font-ui);
-  font-weight: 400;
   line-height: 1.6;
   overflow-x: hidden;
   cursor: none;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   /* promote to its own compositor layer */
   -webkit-font-smoothing: antialiased;
+}
+
+/* Hide footer on home page */
+body.is-home .footer {
+  display: none !important;
 }
 
 /* ===== CUSTOM CURSOR ===== */
@@ -586,6 +594,7 @@ body::before {
 
 /* ===== FOOTER ===== */
 .footer {
+  margin-top: auto;
   background: var(--black-deep);
   border-top: 1px solid var(--black-border);
   padding: 2.2rem 2rem;

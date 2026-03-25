@@ -104,6 +104,8 @@
   function switchTab(hash) {
     if (!hash || hash === '#') hash = '#home';
     
+    document.body.classList.toggle('is-home', hash === '#home');
+
     allSections.forEach(sec => {
       if (sec.id === hash.substring(1)) {
         sec.classList.add('tab-active');
