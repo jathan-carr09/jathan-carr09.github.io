@@ -238,7 +238,7 @@
   document.querySelectorAll('[data-count]').forEach(el => counterObs.observe(el));
 
   /* ── Card tilt ───────────────────────────── */
-  document.querySelectorAll('.project-card').forEach(card => {
+  document.querySelectorAll('.project-card, .stat-card, .skill-card').forEach(card => {
     let rect;
     card.addEventListener('mouseenter', () => {
       rect = card.getBoundingClientRect();

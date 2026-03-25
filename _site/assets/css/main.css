@@ -330,31 +330,40 @@ body::before {
   width: 100%;
 }
 
-.hero-eyebrow {
-  font-family: var(--font-mono);
-  font-size: 0.78rem;
-  letter-spacing: 0.4em;
-  text-transform: uppercase;
-  color: var(--gold);
-  margin-bottom: 1.5rem;
-  opacity: 0;
-  animation: fadeUp 0.8s forwards 0.4s;
-}
-
-.hero-name {
-  font-size: clamp(4rem, 11vw, 8.5rem);
+.hero-title {
   font-family: var(--font-display);
-  font-weight: 700;
-  line-height: 0.92;
-  margin-bottom: 0.6rem;
-  opacity: 0;
-  animation: fadeUp 0.9s forwards 0.6s;
+  font-size: clamp(3rem, 7vw, 5.5rem);
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+  font-weight: 300;
+  transition: text-shadow 0.3s var(--ease);
 }
 
-.hero-name .line-gold {
+.hero-title:hover .highlight {
+  text-shadow: var(--glow-strong);
+}
+
+.hero-title .highlight {
   color: var(--gold);
-  display: block;
+  font-weight: 600;
   font-style: italic;
+  transition: text-shadow 0.3s;
+}
+
+.hero-subtitle {
+  font-size: 1.35rem;
+  color: var(--gray-light);
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+}
+
+.hero-desc {
+  max-width: 480px;
+  color: var(--gray-mid);
+  margin-bottom: 2.5rem;
+  font-size: 1rem;
+  line-height: 1.7;
   font-weight: 300;
 }
 
@@ -1109,6 +1118,193 @@ section.hero.tab-active {
 @keyframes blink {
   50% {
     opacity: 0;
+  }
+}
+/* ===== INTERACTIVE ABOUT CARD ===== */
+.hero-about-wrapper {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+  z-index: 50;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hero-about-card {
+  width: 65px;
+  height: 65px;
+  background: rgba(13, 13, 13, 0.6);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--gold-muted);
+  border-radius: 35px;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.hero-about-icon {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  color: var(--gold);
+  font-style: italic;
+  position: absolute;
+  transition: opacity 0.3s ease;
+  animation: pulseGold 2s infinite;
+}
+
+@keyframes pulseGold {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.15);
+    opacity: 1;
+    text-shadow: 0 0 15px rgba(201, 168, 76, 0.5);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+}
+.hero-about-content {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  padding: 2.5rem;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  pointer-events: none;
+}
+
+.hero-about-card:hover {
+  width: 420px;
+  height: 380px;
+  border-radius: 15px;
+  background: rgba(13, 13, 13, 0.95);
+  border-color: var(--gold);
+  box-shadow: var(--glow-strong);
+}
+
+.hero-about-card:hover .hero-about-icon {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.hero-about-card:hover .hero-about-content {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.4s ease 0.3s;
+}
+
+.hero-about-title {
+  color: var(--gold);
+  font-family: var(--font-display);
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+  line-height: 1.1;
+}
+
+.hero-about-text {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: var(--gray-light);
+}
+
+/* ===== HERO STATS ===== */
+.hero-stats-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1.5rem 5%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+  z-index: 10;
+}
+
+.hero-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.stat-card {
+  padding: 1.2rem;
+  background: rgba(13, 13, 13, 0.4);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  border-radius: 8px;
+  transition: transform 0.3s var(--ease), border-color 0.3s;
+  text-align: center;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--gold);
+  background: rgba(26, 26, 26, 0.6);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.stat-number {
+  font-family: var(--font-display);
+  font-size: 2.2rem;
+  color: var(--gold);
+  line-height: 1;
+  margin-bottom: 0.3rem;
+}
+
+.stat-label {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gray-light);
+}
+
+@media (max-width: 1000px) {
+  .hero-about-wrapper {
+    position: relative;
+    top: auto;
+    right: auto;
+    transform: none;
+    margin-top: 3.5rem;
+    justify-content: flex-start;
+  }
+  .hero-about-card {
+    width: 60px;
+    height: 60px;
+  }
+  .hero-about-card:hover {
+    width: 100%;
+    height: auto;
+    min-height: 280px;
+  }
+  .hero-stats {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 2rem;
+  }
+  .hero-stats-wrapper {
+    position: relative;
+    background: none;
+    padding: 0;
+  }
+  .hero {
+    align-items: flex-start;
+    padding-top: 8rem;
+    padding-bottom: 4rem;
+    flex-direction: column;
   }
 }
 
