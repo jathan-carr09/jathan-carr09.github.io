@@ -105,7 +105,7 @@
     if (!hash || hash === '#') hash = '#home';
     
     allSections.forEach(sec => {
-      if (sec.id === hash.substring(1) || (hash === '#experience' && sec.id === 'education')) {
+      if (sec.id === hash.substring(1)) {
         sec.classList.add('tab-active');
         
         // Re-trigger reveals for premium feel
