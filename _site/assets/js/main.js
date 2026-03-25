@@ -55,6 +55,41 @@
   }
   window.addEventListener('scroll', onScroll, { passive: true });
 
+  // ====== TYPEWRITER EFFECT ======
+  const typeWords = ["Developer", "Cybersecurity Enthusiast", "Engineer", "Innovator"];
+  let typeIdx = 0;
+  let charIdx = 0;
+  let isDeleting = false;
+  const typElem = document.getElementById("typewriter");
+
+  function typeWriter() {
+    if (!typElem) return;
+    const currentWord = typeWords[typeIdx];
+    
+    if (isDeleting) {
+      typElem.textContent = currentWord.substring(0, charIdx - 1);
+      charIdx--;
+    } else {
+      typElem.textContent = currentWord.substring(0, charIdx + 1);
+      charIdx++;
+    }
+    
+    let typeSpeed = isDeleting ? 40 : 100;
+    
+    if (!isDeleting && charIdx === currentWord.length) {
+      typeSpeed = 4500; // Wait 4.5 seconds before deleting
+      isDeleting = true;
+    } else if (isDeleting && charIdx === 0) {
+      isDeleting = false;
+      typeIdx = (typeIdx + 1) % typeWords.length;
+      typeSpeed = 500; // Pause before typing next word
+    }
+    
+    setTimeout(typeWriter, typeSpeed);
+  }
+
+  if (typElem) setTimeout(typeWriter, 1000); // Start after 1s
+
   /* ── Mobile nav ──────────────────────────── */
   const navToggle = document.getElementById('navToggle');
   const navLinks = document.getElementById('navLinks');

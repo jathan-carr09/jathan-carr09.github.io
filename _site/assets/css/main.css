@@ -1100,39 +1100,15 @@ section.hero.tab-active {
   white-space: pre-line;
 }
 
-/* ===== PREMIUM MARQUEE ===== */
-.marquee-container {
-  overflow: hidden;
-  white-space: nowrap;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 1.2rem 0;
-  background: rgba(13, 13, 13, 0.7);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-  z-index: 10;
-}
-
-.marquee-content {
-  display: inline-block;
-  animation: marquee 35s linear infinite;
-  font-family: var(--font-mono);
-  font-size: 0.85rem;
-  letter-spacing: 0.2em;
+/* ===== TYPEWRITER ===== */
+.cursor-blink {
+  animation: blink 1s step-end infinite;
   color: var(--gold);
-  text-transform: uppercase;
 }
 
-@keyframes marquee {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
+@keyframes blink {
+  50% {
+    opacity: 0;
   }
 }
 

@@ -687,23 +687,10 @@ section.hero.tab-active {
 .modal-meta { font-family: var(--font-mono); font-size: 0.8rem; color: var(--gray-mid); margin-bottom: 1.5rem; letter-spacing: 0.1em; text-transform: uppercase; }
 .modal-desc { font-size: 1.05rem; color: var(--gray-light); line-height: 1.8; white-space: pre-line; }
 
-/* ===== PREMIUM MARQUEE ===== */
-.marquee-container {
-  overflow: hidden; white-space: nowrap;
-  position: absolute; bottom: 0; left: 0; right: 0;
-  padding: 1.2rem 0;
-  background: rgba(13, 13, 13, 0.7);
-  backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-  z-index: 10;
+/* ===== TYPEWRITER ===== */
+.cursor-blink {
+  animation: blink 1s step-end infinite;
+  color: var(--gold);
 }
-.marquee-content {
-  display: inline-block; animation: marquee 35s linear infinite;
-  font-family: var(--font-mono); font-size: 0.85rem;
-  letter-spacing: 0.2em; color: var(--gold); text-transform: uppercase;
-}
-@keyframes marquee {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
-}
+@keyframes blink { 50% { opacity: 0; } }
+
