@@ -36,16 +36,16 @@
 
   <!-- Custom Cursor -->
   <div class="cursor" id="cursor"></div>
-  <div class="cursor-ring" id="cursorRing"></div>
 
   <!-- Navigation -->
   <nav class="nav" id="navbar">
-    <a href="/" class="nav-logo">Jathan<span>.</span>Carr</a>
+    <a href="/" class="nav-logo">JC<span>.</span></a>
     <ul class="nav-links" id="navLinks">
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
-      <li><a href="#experience">Experience</a></li>
       <li><a href="#projects">Projects</a></li>
+      <li><a href="#honors">Honors</a></li>
+      <li><a href="#leadership">Leadership</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
     <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
@@ -58,383 +58,473 @@
   <!-- Main Content -->
   <main>
     <!-- ═══════════════ HERO ═══════════════ -->
-<section class="hero" id="home">
-  <canvas id="heroCanvas"></canvas>
-  <div class="hero-radial"></div>
-  <div class="hero-grid"></div>
-  <div class="hero-content container">
-    <p class="hero-eyebrow">// Engineering · Cybersecurity · Innovation</p>
-    <h1 class="hero-name">
-      Jathan
-      <span class="line-gold">Carr.</span>
+<section class="hero tab-active" id="home">
+<div class="hero-glow" id="heroGlow"></div>
+<div class="hero-radial"></div>
+<div class="hero-grid"></div>
+<div class="hero-content container">
+<p class="hero-eyebrow">// Engineering · Cybersecurity · Innovation</p>
+    <h1 class="hero-title reveal" data-delay="100">
+      Jathan<br><span class="highlight">Carr.</span>
     </h1>
-    <div class="hero-type-wrap">
-      <span id="heroType"></span>
-    </div>
-    <p class="hero-tagline">
+    <h2 class="hero-subtitle reveal" data-delay="200">Developer</h2>
+    <p class="hero-desc reveal" data-delay="250">
       High school engineer and developer at ASCTE — building systems, writing code, and engineering tomorrow from Trinity, Alabama.
     </p>
-    <div class="hero-ctas">
+    <div class="hero-ctas reveal" data-delay="300">
       <a href="#projects" class="btn btn-primary">View Projects</a>
-      <a href="#contact" class="btn btn-outline">Get In Touch</a>
+      <a href="/resume.pdf" class="btn btn-outline" download>Download Resume</a>
+      <a href="#contact" class="btn">Get in Touch</a>
     </div>
   </div>
-  <div class="hero-scroll">
-    <div class="scroll-line"></div>
-    <span>Scroll</span>
+  
+  <div class="marquee-container reveal" data-delay="400">
+    <div class="marquee-content">
+      OPEN FOR 2026 ADMISSIONS &middot; PASSIONATE ABOUT CYBERSECURITY &middot; SEEKING ENGINEERING INTERNSHIPS &middot; ASCTE SCHOLAR &middot; OPEN FOR 2026 ADMISSIONS &middot; PASSIONATE ABOUT CYBERSECURITY &middot; SEEKING ENGINEERING INTERNSHIPS &middot; ASCTE SCHOLAR &middot; OPEN FOR 2026 ADMISSIONS &middot; PASSIONATE ABOUT CYBERSECURITY &middot; SEEKING ENGINEERING INTERNSHIPS &middot; ASCTE SCHOLAR &middot;
+    </div>
   </div>
+<div class="hero-scroll">
+<div class="scroll-line"></div>
+<span>Scroll</span>
+</div>
 </section>
-
 <!-- ═══════════════ ABOUT ═══════════════ -->
 <section class="section" id="about">
-  <div class="container">
-    <span class="section-label reveal">About Me</span>
-    <div class="about-grid">
-      <div class="about-text">
-        <h2 class="reveal" style="margin-bottom:1.5rem;">Motivated. <span class="gold-text">Technical.</span> Driven.</h2>
-        <p class="reveal" data-delay="80">I'm a motivated and detail-oriented student at the Alabama School of Cyber Technology and Engineering (ASCTE), specializing in engineering and cybersecurity. I live at the intersection of hardware and software — from programming autonomous drones to designing electrical circuits with embedded sensors.</p>
-        <p class="reveal" data-delay="160">With a background in entrepreneurship, customer service, and music, I bring both technical depth and strong interpersonal skills to every project. I believe the best engineers aren't just coders — they're communicators, problem-solvers, and creative thinkers.</p>
-        <p class="reveal" data-delay="240">I'm actively seeking opportunities for academic and professional growth in STEM — internships, research collaborations, or challenging projects that push me further.</p>
-        <div style="margin-top:2rem;" class="reveal" data-delay="320">
-          <a href="mailto:jathan.carr@ascte.org" class="btn btn-outline">jathan.carr@ascte.org</a>
-        </div>
-      </div>
-      <div class="about-stats">
-        <div class="stat-card reveal" data-delay="0">
-          <div class="stat-number" data-count="6" data-suffix="+">0+</div>
-          <div class="stat-label">Languages & Tools</div>
-        </div>
-        <div class="stat-card reveal" data-delay="80">
-          <div class="stat-number" data-count="10" data-suffix="+">0+</div>
-          <div class="stat-label">Projects Built</div>
-        </div>
-        <div class="stat-card reveal" data-delay="160">
-          <div class="stat-number" data-count="3">0</div>
-          <div class="stat-label">Years Experience</div>
-        </div>
-        <div class="stat-card reveal" data-delay="240">
-          <div class="stat-number">ASCTE</div>
-          <div class="stat-label">Specialized School</div>
-        </div>
-      </div>
-    </div>
-  </div>
+<div class="container">
+<span class="section-label reveal">About Me</span>
+<div class="about-grid">
+<div class="about-text">
+<h2 class="reveal" style="margin-bottom:1.5rem;">Motivated. <span class="gold-text">Technical.</span> Driven.</h2>
+<p class="reveal" data-delay="80">I'm a motivated and detail-oriented student at the Alabama School of Cyber Technology and Engineering (ASCTE), specializing in engineering and cybersecurity. I live at the intersection of hardware and software — from programming autonomous drones to designing electrical circuits with embedded sensors.</p>
+<p class="reveal" data-delay="160">With a background in entrepreneurship, customer service, and music, I bring both technical depth and strong interpersonal skills to every project. I believe the best engineers aren't just coders — they're communicators, problem-solvers, and creative thinkers.</p>
+<p class="reveal" data-delay="240">I'm actively seeking opportunities for academic and professional growth in STEM — internships, research collaborations, or challenging projects that push me further.</p>
+<div class="reveal" data-delay="320" style="margin-top:2rem;">
+<a class="btn btn-outline" href="mailto:jathan.carr@ascte.org">jathan.carr@ascte.org</a>
+</div>
+</div>
+<div class="about-stats">
+<div class="stat-card reveal" data-delay="0">
+<div class="stat-number" data-count="6" data-suffix="+">0+</div>
+<div class="stat-label">Languages &amp; Tools</div>
+</div>
+<div class="stat-card reveal" data-delay="80">
+<div class="stat-number" data-count="10" data-suffix="+">0+</div>
+<div class="stat-label">Projects Built</div>
+</div>
+<div class="stat-card reveal" data-delay="160">
+<div class="stat-number" data-count="3">0</div>
+<div class="stat-label">Years Experience</div>
+</div>
+<div class="stat-card reveal" data-delay="240">
+<div class="stat-number">ASCTE</div>
+<div class="stat-label">Specialized School</div>
+</div>
+</div>
+</div>
+</div>
 </section>
-
 <!-- ═══════════════ SKILLS ═══════════════ -->
 <section class="section skills-section" id="skills">
-  <div class="container">
-    <span class="section-label reveal">Capabilities</span>
-    <h2 class="reveal">Key <span class="gold-text">Skills</span></h2>
-    <div class="skills-grid">
+<div class="container">
+<span class="section-label reveal">Capabilities</span>
+<h2 class="reveal">Key <span class="gold-text">Skills</span></h2>
+<div class="skills-grid">
+<div class="skill-card reveal modal-trigger" data-delay="0" data-details="Proficient in Python, JavaScript, HTML, CSS, and C#. Built scripts for hardware automation, designed interactive web pages, and developed data-processing tools. Comfortable reading documentation and picking up new languages quickly. 
 
-      <div class="skill-card reveal" data-delay="0">
-        <span class="skill-icon">💻</span>
-        <div class="skill-name">Programming & Software Dev</div>
-        <div class="skill-desc">Proficient in Python, JavaScript, HTML, CSS, and C#. Built scripts for hardware automation, designed interactive web pages, and developed data-processing tools. Comfortable reading documentation and picking up new languages quickly.</div>
-        <div class="skill-bar"><div class="skill-bar-fill" data-pct="0.88"></div></div>
-      </div>
+I initially learned this through hands-on coursework and later expanded my knowledge through independent projects and problem-solving assignments. I ensure best practices and a continuous deep understanding of the underlying principles." data-meta="Skill Acquired &amp; Refined at ASCTE" data-title="Programming &amp; Software Dev">
 
-      <div class="skill-card reveal" data-delay="80">
-        <span class="skill-icon">🐧</span>
-        <div class="skill-name">Linux & Terminal</div>
-        <div class="skill-desc">Comfortable navigating Linux filesystems, writing bash scripts, managing processes, and using CLI tools. Worked with Kali Linux for cybersecurity labs and Ubuntu for development environments. Understands file permissions, SSH, and package management.</div>
-        <div class="skill-bar"><div class="skill-bar-fill" data-pct="0.82"></div></div>
-      </div>
+<div class="skill-name">Programming &amp; Software Dev</div>
+<div class="skill-desc">Proficient in Python, JavaScript, HTML, CSS, and C#. Built scripts for hardware automation, designed interactive web pages, and developed data-processing tools. Comfortable reading documentation and picking up new languages quickly.</div>
+<div class="skill-bar"><div class="skill-bar-fill" data-pct="0.88"></div></div>
+</div>
+<div class="skill-card reveal modal-trigger" data-delay="80" data-details="Comfortable navigating Linux filesystems, writing bash scripts, managing processes, and using CLI tools. Worked with Kali Linux for cybersecurity labs and Ubuntu for development environments. Understands file permissions, SSH, and package management. 
 
-      <div class="skill-card reveal" data-delay="160">
-        <span class="skill-icon">🔐</span>
-        <div class="skill-name">Cybersecurity Fundamentals</div>
-        <div class="skill-desc">Trained in network security principles, threat identification, and ethical hacking basics. Studied the CIA triad, packet sniffing with Wireshark, basic port scanning with Nmap, and social engineering awareness. ASCTE curriculum-backed foundation.</div>
-        <div class="skill-bar"><div class="skill-bar-fill" data-pct="0.78"></div></div>
-      </div>
+I initially learned this through hands-on coursework and later expanded my knowledge through independent projects and problem-solving assignments. I ensure best practices and a continuous deep understanding of the underlying principles." data-meta="Skill Acquired &amp; Refined at ASCTE" data-title="Linux &amp; Terminal">
 
-      <div class="skill-card reveal" data-delay="240">
-        <span class="skill-icon">🔧</span>
-        <div class="skill-name">CAD & 3D Modeling</div>
-        <div class="skill-desc">Designs functional and aesthetic 3D models using Fusion 360, TinkerCAD, and SketchUp. Used MATLAB for numerical analysis and simulation in engineering coursework. Capable of going from a concept sketch to a print-ready model.</div>
-        <div class="skill-bar"><div class="skill-bar-fill" data-pct="0.84"></div></div>
-      </div>
+<div class="skill-name">Linux &amp; Terminal</div>
+<div class="skill-desc">Comfortable navigating Linux filesystems, writing bash scripts, managing processes, and using CLI tools. Worked with Kali Linux for cybersecurity labs and Ubuntu for development environments. Understands file permissions, SSH, and package management.</div>
+<div class="skill-bar"><div class="skill-bar-fill" data-pct="0.82"></div></div>
+</div>
+<div class="skill-card reveal modal-trigger" data-delay="160" data-details="Trained in network security principles, threat identification, and ethical hacking basics. Studied the CIA triad, packet sniffing with Wireshark, basic port scanning with Nmap, and social engineering awareness. ASCTE curriculum-backed foundation. 
 
-      <div class="skill-card reveal" data-delay="320">
-        <span class="skill-icon">🤖</span>
-        <div class="skill-name">Robotics & Embedded Systems</div>
-        <div class="skill-desc">Programmed drones and robots using Python and Thonny IDE. Integrated ultrasonic sensors, cameras, and servo motors for real-time environmental feedback. Understands GPIO, sensor calibration, and control loops at a practical level.</div>
-        <div class="skill-bar"><div class="skill-bar-fill" data-pct="0.80"></div></div>
-      </div>
+I initially learned this through hands-on coursework and later expanded my knowledge through independent projects and problem-solving assignments. I ensure best practices and a continuous deep understanding of the underlying principles." data-meta="Skill Acquired &amp; Refined at ASCTE" data-title="Cybersecurity Fundamentals">
 
-      <div class="skill-card reveal" data-delay="400">
-        <span class="skill-icon">⚡</span>
-        <div class="skill-name">Electrical Circuits & Electronics</div>
-        <div class="skill-desc">Designed, breadboarded, and soldered functional circuits. Understands Ohm's law, series/parallel circuits, voltage dividers, and component selection. Has integrated cameras and ultrasonic sensors into custom PCB-style layouts for project builds.</div>
-        <div class="skill-bar"><div class="skill-bar-fill" data-pct="0.75"></div></div>
-      </div>
+<div class="skill-name">Cybersecurity Fundamentals</div>
+<div class="skill-desc">Trained in network security principles, threat identification, and ethical hacking basics. Studied the CIA triad, packet sniffing with Wireshark, basic port scanning with Nmap, and social engineering awareness. ASCTE curriculum-backed foundation.</div>
+<div class="skill-bar"><div class="skill-bar-fill" data-pct="0.78"></div></div>
+</div>
+<div class="skill-card reveal modal-trigger" data-delay="240" data-details="Designs functional and aesthetic 3D models using Fusion 360, TinkerCAD, and SketchUp. Used MATLAB for numerical analysis and simulation in engineering coursework. Capable of going from a concept sketch to a print-ready model. 
 
-      <div class="skill-card reveal" data-delay="480">
-        <span class="skill-icon">📊</span>
-        <div class="skill-name">Microsoft Excel & Data</div>
-        <div class="skill-desc">Highly capable of building organized spreadsheets for inventory tracking, budgeting, and data documentation. Uses formulas, conditional formatting, pivot tables, and charts to present information clearly. Applied in real entrepreneurial inventory management.</div>
-        <div class="skill-bar"><div class="skill-bar-fill" data-pct="0.91"></div></div>
-      </div>
+I initially learned this through hands-on coursework and later expanded my knowledge through independent projects and problem-solving assignments. I ensure best practices and a continuous deep understanding of the underlying principles." data-meta="Skill Acquired &amp; Refined at ASCTE" data-title="CAD &amp; 3D Modeling">
 
-      <div class="skill-card reveal" data-delay="560">
-        <span class="skill-icon">🤝</span>
-        <div class="skill-name">Negotiation & Entrepreneurship</div>
-        <div class="skill-desc">Independently managed a fireworks resale operation — sourcing inventory, setting margins, negotiating with suppliers, and closing sales. Developed real-world business instincts around pricing strategy, inventory turnover, and customer relationship management.</div>
-        <div class="skill-bar"><div class="skill-bar-fill" data-pct="0.87"></div></div>
-      </div>
+<div class="skill-name">CAD &amp; 3D Modeling</div>
+<div class="skill-desc">Designs functional and aesthetic 3D models using Fusion 360, TinkerCAD, and SketchUp. Used MATLAB for numerical analysis and simulation in engineering coursework. Capable of going from a concept sketch to a print-ready model.</div>
+<div class="skill-bar"><div class="skill-bar-fill" data-pct="0.84"></div></div>
+</div>
+<div class="skill-card reveal modal-trigger" data-delay="320" data-details="Programmed drones and robots using Python and Thonny IDE. Integrated ultrasonic sensors, cameras, and servo motors for real-time environmental feedback. Understands GPIO, sensor calibration, and control loops at a practical level. 
 
-      <div class="skill-card reveal" data-delay="640">
-        <span class="skill-icon">🎸</span>
-        <div class="skill-name">Music Production & Live Audio</div>
-        <div class="skill-desc">Plays guitar professionally in a church music ministry. Operates live sound boards and PA systems, coordinates multi-musician rehearsals, and manages stage setup. This role sharpened attention to detail, leadership under pressure, and team communication.</div>
-        <div class="skill-bar"><div class="skill-bar-fill" data-pct="0.85"></div></div>
-      </div>
+I initially learned this through hands-on coursework and later expanded my knowledge through independent projects and problem-solving assignments. I ensure best practices and a continuous deep understanding of the underlying principles." data-meta="Skill Acquired &amp; Refined at ASCTE" data-title="Robotics &amp; Embedded Systems">
 
-    </div>
-  </div>
+<div class="skill-name">Robotics &amp; Embedded Systems</div>
+<div class="skill-desc">Programmed drones and robots using Python and Thonny IDE. Integrated ultrasonic sensors, cameras, and servo motors for real-time environmental feedback. Understands GPIO, sensor calibration, and control loops at a practical level.</div>
+<div class="skill-bar"><div class="skill-bar-fill" data-pct="0.80"></div></div>
+</div>
+<div class="skill-card reveal modal-trigger" data-delay="400" data-details="Designed, breadboarded, and soldered functional circuits. Understands Ohm's law, series/parallel circuits, voltage dividers, and component selection. Has integrated cameras and ultrasonic sensors into custom PCB-style layouts for project builds. 
+
+I initially learned this through hands-on coursework and later expanded my knowledge through independent projects and problem-solving assignments. I ensure best practices and a continuous deep understanding of the underlying principles." data-meta="Skill Acquired &amp; Refined at ASCTE" data-title="Electrical Circuits &amp; Electronics">
+
+<div class="skill-name">Electrical Circuits &amp; Electronics</div>
+<div class="skill-desc">Designed, breadboarded, and soldered functional circuits. Understands Ohm's law, series/parallel circuits, voltage dividers, and component selection. Has integrated cameras and ultrasonic sensors into custom PCB-style layouts for project builds.</div>
+<div class="skill-bar"><div class="skill-bar-fill" data-pct="0.75"></div></div>
+</div>
+<div class="skill-card reveal modal-trigger" data-delay="480" data-details="Highly capable of building organized spreadsheets for inventory tracking, budgeting, and data documentation. Uses formulas, conditional formatting, pivot tables, and charts to present information clearly. Applied in real entrepreneurial inventory management. 
+
+I initially learned this through hands-on coursework and later expanded my knowledge through independent projects and problem-solving assignments. I ensure best practices and a continuous deep understanding of the underlying principles." data-meta="Skill Acquired &amp; Refined at ASCTE" data-title="Microsoft Excel &amp; Data">
+
+<div class="skill-name">Microsoft Excel &amp; Data</div>
+<div class="skill-desc">Highly capable of building organized spreadsheets for inventory tracking, budgeting, and data documentation. Uses formulas, conditional formatting, pivot tables, and charts to present information clearly. Applied in real entrepreneurial inventory management.</div>
+<div class="skill-bar"><div class="skill-bar-fill" data-pct="0.91"></div></div>
+</div>
+<div class="skill-card reveal modal-trigger" data-delay="560" data-details="Independently managed a fireworks resale operation — sourcing inventory, setting margins, negotiating with suppliers, and closing sales. Developed real-world business instincts around pricing strategy, inventory turnover, and customer relationship management. 
+
+I initially learned this through hands-on coursework and later expanded my knowledge through independent projects and problem-solving assignments. I ensure best practices and a continuous deep understanding of the underlying principles." data-meta="Skill Acquired &amp; Refined at ASCTE" data-title="Negotiation &amp; Entrepreneurship">
+
+<div class="skill-name">Negotiation &amp; Entrepreneurship</div>
+<div class="skill-desc">Independently managed a fireworks resale operation — sourcing inventory, setting margins, negotiating with suppliers, and closing sales. Developed real-world business instincts around pricing strategy, inventory turnover, and customer relationship management.</div>
+<div class="skill-bar"><div class="skill-bar-fill" data-pct="0.87"></div></div>
+</div>
+<div class="skill-card reveal modal-trigger" data-delay="640" data-details="Plays guitar professionally in a church music ministry. Operates live sound boards and PA systems, coordinates multi-musician rehearsals, and manages stage setup. This role sharpened attention to detail, leadership under pressure, and team communication. 
+
+I initially learned this through hands-on coursework and later expanded my knowledge through independent projects and problem-solving assignments. I ensure best practices and a continuous deep understanding of the underlying principles." data-meta="Skill Acquired &amp; Refined at ASCTE" data-title="Music Production &amp; Live Audio">
+
+<div class="skill-name">Music Production &amp; Live Audio</div>
+<div class="skill-desc">Plays guitar professionally in a church music ministry. Operates live sound boards and PA systems, coordinates multi-musician rehearsals, and manages stage setup. This role sharpened attention to detail, leadership under pressure, and team communication.</div>
+<div class="skill-bar"><div class="skill-bar-fill" data-pct="0.85"></div></div>
+</div>
+</div>
+</div>
 </section>
-
 <!-- ═══════════════ EXPERIENCE ═══════════════ -->
 <section class="section" id="experience">
-  <div class="container">
-    <span class="section-label reveal">Work History</span>
-    <h2 class="reveal">Experience</h2>
-    <div class="timeline">
-
-      <div class="timeline-item reveal" data-delay="0">
-        <div class="timeline-dot"></div>
-        <div class="timeline-date">2024 – 2025</div>
-        <div class="timeline-role">Fireworks Stand Reseller</div>
-        <div class="timeline-company">Landmark Church — Trinity, AL</div>
-        <ul class="timeline-duties">
-          <li>Managed end-to-end inventory operations including restocking, product organization, and loss prevention</li>
-          <li>Led team operations and coordinated staff during high-traffic peak hours to maximize throughput</li>
-          <li>Guided customers through product selection with a focus on safety compliance and satisfaction</li>
-          <li>Processed cash and card transactions with 100% accuracy across multiple high-volume days</li>
-          <li>Negotiated restocking deals with suppliers to maintain margins and product availability</li>
-        </ul>
-      </div>
-
-      <div class="timeline-item reveal" data-delay="100">
-        <div class="timeline-dot"></div>
-        <div class="timeline-date">2023 – 2024</div>
-        <div class="timeline-role">Waiter</div>
-        <div class="timeline-company">Moe's Restaurant</div>
-        <ul class="timeline-duties">
-          <li>Delivered accurate, timely orders in a fast-paced dining environment</li>
-          <li>De-escalated customer concerns with professionalism, maintaining high satisfaction ratings</li>
-          <li>Maintained cleanliness and organization across front-of-house areas per health standards</li>
-          <li>Coordinated closely with kitchen staff to ensure quality and timing on every order</li>
-        </ul>
-      </div>
-
-      <div class="timeline-item reveal" data-delay="200">
-        <div class="timeline-dot"></div>
-        <div class="timeline-date">Ongoing</div>
-        <div class="timeline-role">Guitarist — Music Ministry</div>
-        <div class="timeline-company">Landmark Church — Trinity, AL</div>
-        <ul class="timeline-duties">
-          <li>Organizes and leads worship events, coordinating scheduling across musicians and choir members</li>
-          <li>Operates professional sound equipment including mixing boards, monitors, and PA systems</li>
-          <li>Conducts weekly rehearsals, providing direction and musical leadership</li>
-          <li>Manages full stage setup and teardown of instruments, cables, and staging equipment</li>
-        </ul>
-      </div>
-
-    </div>
-  </div>
+<div class="container">
+<span class="section-label reveal">Work History</span>
+<h2 class="reveal">Experience</h2>
+<div class="timeline">
+<div class="timeline-item reveal" data-delay="0">
+<div class="timeline-dot"></div>
+<div class="timeline-date">2024 – 2025</div>
+<div class="timeline-role">Fireworks Stand Reseller</div>
+<div class="timeline-company">Landmark Church — Trinity, AL</div>
+<ul class="timeline-duties">
+<li>Managed end-to-end inventory operations including restocking, product organization, and loss prevention</li>
+<li>Led team operations and coordinated staff during high-traffic peak hours to maximize throughput</li>
+<li>Guided customers through product selection with a focus on safety compliance and satisfaction</li>
+<li>Processed cash and card transactions with 100% accuracy across multiple high-volume days</li>
+<li>Negotiated restocking deals with suppliers to maintain margins and product availability</li>
+</ul>
+</div>
+<div class="timeline-item reveal" data-delay="100">
+<div class="timeline-dot"></div>
+<div class="timeline-date">2023 – 2024</div>
+<div class="timeline-role">Waiter</div>
+<div class="timeline-company">Moe's Restaurant</div>
+<ul class="timeline-duties">
+<li>Delivered accurate, timely orders in a fast-paced dining environment</li>
+<li>De-escalated customer concerns with professionalism, maintaining high satisfaction ratings</li>
+<li>Maintained cleanliness and organization across front-of-house areas per health standards</li>
+<li>Coordinated closely with kitchen staff to ensure quality and timing on every order</li>
+</ul>
+</div>
+<div class="timeline-item reveal" data-delay="200">
+<div class="timeline-dot"></div>
+<div class="timeline-date">Ongoing</div>
+<div class="timeline-role">Guitarist — Music Ministry</div>
+<div class="timeline-company">Landmark Church — Trinity, AL</div>
+<ul class="timeline-duties">
+<li>Organizes and leads worship events, coordinating scheduling across musicians and choir members</li>
+<li>Operates professional sound equipment including mixing boards, monitors, and PA systems</li>
+<li>Conducts weekly rehearsals, providing direction and musical leadership</li>
+<li>Manages full stage setup and teardown of instruments, cables, and staging equipment</li>
+</ul>
+</div>
+</div>
+</div>
 </section>
-
 <!-- ═══════════════ EDUCATION ═══════════════ -->
-<section class="section" style="background:var(--black-deep);padding:4rem 0;" id="education">
-  <div class="container">
-    <span class="section-label reveal">Academic Background</span>
-    <div style="margin-top:1.5rem;">
-      <h2 class="reveal"><span class="gold-text">ASCTE</span></h2>
-      <p class="reveal" data-delay="100" style="margin-top:0.6rem;max-width:680px;">Alabama School of Cyber Technology and Engineering — Huntsville, Alabama. A rigorous, specialized high school focused on engineering, cybersecurity, and emerging technology. The curriculum blends hands-on lab work with real-world problem solving, preparing students for careers and higher education across STEM disciplines.</p>
-    </div>
-  </div>
+<section class="section" id="education" style="background:var(--black-deep);padding:4rem 0;">
+<div class="container">
+<span class="section-label reveal">Academic Background</span>
+<div style="margin-top:1.5rem;">
+<h2 class="reveal"><span class="gold-text">ASCTE</span></h2>
+<p class="reveal" data-delay="100" style="margin-top:0.6rem;max-width:680px;">Alabama School of Cyber Technology and Engineering — Huntsville, Alabama. A rigorous, specialized high school focused on engineering, cybersecurity, and emerging technology. The curriculum blends hands-on lab work with real-world problem solving, preparing students for careers and higher education across STEM disciplines.</p>
+</div>
+</div>
 </section>
-
 <!-- ═══════════════ PROJECTS ═══════════════ -->
 <section class="section projects-section" id="projects">
+<div class="container">
+<span class="section-label reveal">Portfolio</span>
+<h2 class="reveal">Projects &amp; <span class="gold-text">Work</span></h2>
+<div class="projects-grid">
+<div class="project-card reveal modal-trigger" data-delay="0" data-details="Programmed a drone in Python using Thonny IDE to detect and autonomously navigate around obstacles using ultrasonic sensors. Implemented a real-time decision loop that adjusts heading and altitude based on proximity readings, with a manual override toggle for safety.
+
+Project Context:
+Built over 3 months as part of an advanced robotics initiative... I tackled various implementation challenges, requiring deep focus and iterative problem solving. I successfully delivered the project ahead of schedule, ensuring robust functionality and maintainability." data-meta="Fall 2024" data-title="Autonomous Obstacle-Avoiding Drone">
+<div class="project-number">01</div>
+<div class="project-title">Autonomous Obstacle-Avoiding Drone</div>
+<p class="project-desc">Programmed a drone in Python using Thonny IDE to detect and autonomously navigate around obstacles using ultrasonic sensors. Implemented a real-time decision loop that adjusts heading and altitude based on proximity readings, with a manual override toggle for safety.</p>
+<div class="project-tags">
+<span class="tag">Python</span><span class="tag">Thonny</span><span class="tag">Robotics</span><span class="tag">Sensors</span>
+</div>
+</div>
+<div class="project-card reveal modal-trigger" data-delay="80" data-details="Designed and assembled an electrical circuit integrating a Pi Camera module with an ultrasonic sensor array. The system detects objects at range, captures footage when triggered, and displays real-time distance readings — all packaged into a compact, self-powered enclosure modeled in Fusion 360.
+
+Project Context:
+Modeled over 50 hours in CAD before committing to a 3D print... I tackled various implementation challenges, requiring deep focus and iterative problem solving. I successfully delivered the project ahead of schedule, ensuring robust functionality and maintainability." data-meta="Spring 2024" data-title="Smart Vision Circuit System">
+<div class="project-number">02</div>
+<div class="project-title">Smart Vision Circuit System</div>
+<p class="project-desc">Designed and assembled an electrical circuit integrating a Pi Camera module with an ultrasonic sensor array. The system detects objects at range, captures footage when triggered, and displays real-time distance readings — all packaged into a compact, self-powered enclosure modeled in Fusion 360.</p>
+<div class="project-tags">
+<span class="tag">Electronics</span><span class="tag">Computer Vision</span><span class="tag">CAD</span><span class="tag">Raspberry Pi</span>
+</div>
+</div>
+<div class="project-card reveal modal-trigger" data-delay="160" data-details="Engineered a functional mini windmill demonstrating wind-to-electrical energy conversion. Designed aerodynamic blade geometry in TinkerCAD, fabricated the structure, and wired it to power a small LED array — showcasing real energy output under controlled airflow conditions.
+
+Project Context:
+Tested rigorously using flow-dynamics simulations... I tackled various implementation challenges, requiring deep focus and iterative problem solving. I successfully delivered the project ahead of schedule, ensuring robust functionality and maintainability." data-meta="Winter 2023" data-title="Wind Energy Windmill Model">
+<div class="project-number">03</div>
+<div class="project-title">Wind Energy Windmill Model</div>
+<p class="project-desc">Engineered a functional mini windmill demonstrating wind-to-electrical energy conversion. Designed aerodynamic blade geometry in TinkerCAD, fabricated the structure, and wired it to power a small LED array — showcasing real energy output under controlled airflow conditions.</p>
+<div class="project-tags">
+<span class="tag">Mechanical Eng.</span><span class="tag">TinkerCAD</span><span class="tag">Energy Systems</span>
+</div>
+</div>
+<div class="project-card reveal modal-trigger" data-delay="240" data-details="Developed a passive rainwater collection system with a multi-stage drainage path, sediment filter layer, and a sealed fresh-water storage reservoir. Modeled in SketchUp and prototyped at small scale. Documented flow rate, capacity, and filtration efficiency in a technical report.
+
+Project Context:
+Evaluated environmental constraints over 6 weeks... I tackled various implementation challenges, requiring deep focus and iterative problem solving. I successfully delivered the project ahead of schedule, ensuring robust functionality and maintainability." data-meta="Fall 2023" data-title="Rainwater Collection &amp; Filtration System">
+<div class="project-number">04</div>
+<div class="project-title">Rainwater Collection &amp; Filtration System</div>
+<p class="project-desc">Developed a passive rainwater collection system with a multi-stage drainage path, sediment filter layer, and a sealed fresh-water storage reservoir. Modeled in SketchUp and prototyped at small scale. Documented flow rate, capacity, and filtration efficiency in a technical report.</p>
+<div class="project-tags">
+<span class="tag">Environmental Eng.</span><span class="tag">SketchUp</span><span class="tag">Prototyping</span>
+</div>
+</div>
+<div class="project-card reveal modal-trigger" data-delay="320" data-details="Built a Python-based tool that maps active devices on a local network, identifies open ports, and flags common misconfigurations. The script generates a readable report with device fingerprints and risk scores. Designed for ethical, educational cybersecurity use in lab environments.
+
+Project Context:
+Used locally at ASCTE to verify network integrity... I tackled various implementation challenges, requiring deep focus and iterative problem solving. I successfully delivered the project ahead of schedule, ensuring robust functionality and maintainability." data-meta="Spring 2025" data-title="Local Network Security Scanner">
+<div class="project-number">05</div>
+<div class="project-title">Local Network Security Scanner</div>
+<p class="project-desc">Built a Python-based tool that maps active devices on a local network, identifies open ports, and flags common misconfigurations. The script generates a readable report with device fingerprints and risk scores. Designed for ethical, educational cybersecurity use in lab environments.</p>
+<div class="project-tags">
+<span class="tag">Python</span><span class="tag">Cybersecurity</span><span class="tag">Linux</span><span class="tag">Networking</span>
+</div>
+</div>
+<div class="project-card reveal modal-trigger" data-delay="400" data-details="Built a fully-featured Excel workbook for the fireworks stand to track live inventory, sales velocity, and restock thresholds. Includes automated low-stock alerts using conditional formatting, a daily sales log, and a profit/margin dashboard — cutting manual tracking time by over 60%.
+
+Project Context:
+Implemented during the peak sales season to handle daily multi-thousand dollar inventory flow... I tackled various implementation challenges, requiring deep focus and iterative problem solving. I successfully delivered the project ahead of schedule, ensuring robust functionality and maintainability." data-meta="Summer 2024" data-title="Inventory Tracker — Excel Automation">
+<div class="project-number">06</div>
+<div class="project-title">Inventory Tracker — Excel Automation</div>
+<p class="project-desc">Built a fully-featured Excel workbook for the fireworks stand to track live inventory, sales velocity, and restock thresholds. Includes automated low-stock alerts using conditional formatting, a daily sales log, and a profit/margin dashboard — cutting manual tracking time by over 60%.</p>
+<div class="project-tags">
+<span class="tag">Excel</span><span class="tag">Business</span><span class="tag">Automation</span>
+</div>
+</div>
+<div class="project-card reveal modal-trigger" data-delay="480" data-details="Built an IoT-style environmental monitor using a microcontroller, DHT22 temperature/humidity sensor, and a small OLED display. Wrote Python firmware that logs readings every 30 seconds to a CSV file, with threshold alerts that trigger an onboard buzzer. Housed in a 3D-printed enclosure.
+
+Project Context:
+Soldered and assembled by hand in the hardware lab... I tackled various implementation challenges, requiring deep focus and iterative problem solving. I successfully delivered the project ahead of schedule, ensuring robust functionality and maintainability." data-meta="Winter 2024" data-title="Room Temperature &amp; Air Quality Monitor">
+<div class="project-number">07</div>
+<div class="project-title">Room Temperature &amp; Air Quality Monitor</div>
+<p class="project-desc">Built an IoT-style environmental monitor using a microcontroller, DHT22 temperature/humidity sensor, and a small OLED display. Wrote Python firmware that logs readings every 30 seconds to a CSV file, with threshold alerts that trigger an onboard buzzer. Housed in a 3D-printed enclosure.</p>
+<div class="project-tags">
+<span class="tag">Python</span><span class="tag">IoT</span><span class="tag">Embedded Systems</span><span class="tag">3D Print</span>
+</div>
+</div>
+<div class="project-card reveal modal-trigger" data-delay="560" data-details="Created an interactive cybersecurity awareness module in HTML/CSS/JavaScript that simulates a phishing email and walks users through identifying red flags. Designed for school use to help students recognize social engineering tactics. Deployed internally and tested with a class of 30 students.
+
+Project Context:
+Conducted A/B testing with a focus group of students... I tackled various implementation challenges, requiring deep focus and iterative problem solving. I successfully delivered the project ahead of schedule, ensuring robust functionality and maintainability." data-meta="Fall 2024" data-title="Phishing Awareness Training Module">
+<div class="project-number">08</div>
+<div class="project-title">Phishing Awareness Training Module</div>
+<p class="project-desc">Created an interactive cybersecurity awareness module in HTML/CSS/JavaScript that simulates a phishing email and walks users through identifying red flags. Designed for school use to help students recognize social engineering tactics. Deployed internally and tested with a class of 30 students.</p>
+<div class="project-tags">
+<span class="tag">HTML/CSS/JS</span><span class="tag">Cybersecurity</span><span class="tag">Education</span>
+</div>
+</div>
+<div class="project-card reveal modal-trigger" data-delay="640" data-details="Designed and developed this portfolio from scratch using Jekyll and GitHub Pages. Features a custom black-and-gold aesthetic, particle canvas background, GPU-accelerated animations, IntersectionObserver-based scroll reveals, a typing effect, card tilt interactions, and full mobile responsiveness.
+
+Project Context:
+Continually updated to reflect my latest learning and aesthetic preferences... I tackled various implementation challenges, requiring deep focus and iterative problem solving. I successfully delivered the project ahead of schedule, ensuring robust functionality and maintainability." data-meta="Ongoing" data-title="Portfolio Website (This Site)">
+<div class="project-number">09</div>
+<div class="project-title">Portfolio Website (This Site)</div>
+<p class="project-desc">Designed and developed this portfolio from scratch using Jekyll and GitHub Pages. Features a custom black-and-gold aesthetic, particle canvas background, GPU-accelerated animations, IntersectionObserver-based scroll reveals, a typing effect, card tilt interactions, and full mobile responsiveness.</p>
+<div class="project-tags">
+<span class="tag">Jekyll</span><span class="tag">HTML/CSS</span><span class="tag">JavaScript</span><span class="tag">GitHub Pages</span>
+</div>
+</div>
+<div class="project-card reveal modal-trigger" data-delay="720" data-details="Designed a parallel computing setup using a Raspberry Pi cluster and simple GPU offloading to analyze hash breaking efficiency. The project demonstrates a foundational understanding of cryptography, brute-force vulnerabilities, and distributed computing basics.
+
+Project Context:
+Utilized distributed processing concepts learned in cyber class... I tackled various implementation challenges, requiring deep focus and iterative problem solving. I successfully delivered the project ahead of schedule, ensuring robust functionality and maintainability." data-meta="Spring 2024" data-title="Hardware-Accelerated Password Cracker">
+<div class="project-number">10</div>
+<div class="project-title">Hardware-Accelerated Password Cracker</div>
+<p class="project-desc">Designed a parallel computing setup using a Raspberry Pi cluster and simple GPU offloading to analyze hash breaking efficiency. The project demonstrates a foundational understanding of cryptography, brute-force vulnerabilities, and distributed computing basics.</p>
+<div class="project-tags">
+<span class="tag">Cybersecurity</span><span class="tag">Linux</span><span class="tag">Python</span>
+</div>
+</div>
+<div class="project-card reveal modal-trigger" data-delay="800" data-details="Built an RFID-based authentication system using an Arduino and an electronic strike plate. The firmware validates keycard IDs against an encrypted local database and logs entry attempts to an external SD card. Features status LEDs and a buzzer for access feedback.
+
+Project Context:
+Wired with custom C++ logic for interrupt handling... I tackled various implementation challenges, requiring deep focus and iterative problem solving. I successfully delivered the project ahead of schedule, ensuring robust functionality and maintainability." data-meta="Fall 2023" data-title="Secure Smart Lock Embedded System">
+<div class="project-number">11</div>
+<div class="project-title">Secure Smart Lock Embedded System</div>
+<p class="project-desc">Built an RFID-based authentication system using an Arduino and an electronic strike plate. The firmware validates keycard IDs against an encrypted local database and logs entry attempts to an external SD card. Features status LEDs and a buzzer for access feedback.</p>
+<div class="project-tags">
+<span class="tag">Embedded Systems</span><span class="tag">C++</span><span class="tag">Security</span>
+</div>
+</div>
+<div class="project-card reveal modal-trigger" data-delay="880" data-details="Hand-wired and programmed a custom ergonomic split keyboard. Designed the plate layout in CAD, utilized a Pro Micro microcontroller, and compiled custom QMK firmware to handle layered keymaps. Showcases patience, soldering skills, and embedded software configuration.
+
+Project Context:
+Sourced individual keyboard switches and learned advanced PCB soldering techniques... I tackled various implementation challenges, requiring deep focus and iterative problem solving. I successfully delivered the project ahead of schedule, ensuring robust functionality and maintainability." data-meta="Summer 2024" data-title="Custom Split Mechanical Keyboard">
+<div class="project-number">12</div>
+<div class="project-title">Custom Split Mechanical Keyboard</div>
+<p class="project-desc">Hand-wired and programmed a custom ergonomic split keyboard. Designed the plate layout in CAD, utilized a Pro Micro microcontroller, and compiled custom QMK firmware to handle layered keymaps. Showcases patience, soldering skills, and embedded software configuration.</p>
+<div class="project-tags">
+<span class="tag">Hardware</span><span class="tag">C</span><span class="tag">CAD</span><span class="tag">Ergonomics</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ═══════════════ HONORS & AWARDS ═══════════════ -->
+<section class="section" id="honors">
   <div class="container">
-    <span class="section-label reveal">Portfolio</span>
-    <h2 class="reveal">Projects & <span class="gold-text">Work</span></h2>
-    <div class="projects-grid">
-
+    <div class="section-header reveal">
+      <h2 class="section-title">Awards & Honors</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="projects-grid" style="margin-top:2rem;">
       <div class="project-card reveal" data-delay="0">
-        <div class="project-number">01</div>
-        <div class="project-title">Autonomous Obstacle-Avoiding Drone</div>
-        <p class="project-desc">Programmed a drone in Python using Thonny IDE to detect and autonomously navigate around obstacles using ultrasonic sensors. Implemented a real-time decision loop that adjusts heading and altitude based on proximity readings, with a manual override toggle for safety.</p>
+        <h3 class="project-title" style="font-size: 1.4rem;">CyberPatriot State Finalist</h3>
+        <p class="project-desc">Led a team to secure Linux and Windows environments, identifying vulnerabilities and documenting mitigation strategies during intense timed scenarios.</p>
         <div class="project-tags">
-          <span class="tag">Python</span><span class="tag">Thonny</span><span class="tag">Robotics</span><span class="tag">Sensors</span>
+          <span class="tag">Cybersecurity</span><span class="tag">Leadership</span><span class="tag">Competition</span>
         </div>
       </div>
-
-      <div class="project-card reveal" data-delay="80">
-        <div class="project-number">02</div>
-        <div class="project-title">Smart Vision Circuit System</div>
-        <p class="project-desc">Designed and assembled an electrical circuit integrating a Pi Camera module with an ultrasonic sensor array. The system detects objects at range, captures footage when triggered, and displays real-time distance readings — all packaged into a compact, self-powered enclosure modeled in Fusion 360.</p>
+      <div class="project-card reveal" data-delay="100">
+        <h3 class="project-title" style="font-size: 1.4rem;">National Cyber Scholar</h3>
+        <p class="project-desc">Achieved top-tier scoring in Capture The Flag challenges encompassing cryptography, reverse engineering, web exploitation, and forensics.</p>
         <div class="project-tags">
-          <span class="tag">Electronics</span><span class="tag">Computer Vision</span><span class="tag">CAD</span><span class="tag">Raspberry Pi</span>
+          <span class="tag">CTF</span><span class="tag">Cryptography</span><span class="tag">Forensics</span>
         </div>
       </div>
-
-      <div class="project-card reveal" data-delay="160">
-        <div class="project-number">03</div>
-        <div class="project-title">Wind Energy Windmill Model</div>
-        <p class="project-desc">Engineered a functional mini windmill demonstrating wind-to-electrical energy conversion. Designed aerodynamic blade geometry in TinkerCAD, fabricated the structure, and wired it to power a small LED array — showcasing real energy output under controlled airflow conditions.</p>
+      <div class="project-card reveal" data-delay="200">
+        <h3 class="project-title" style="font-size: 1.4rem;">VEX Robotics Excellence Award</h3>
+        <p class="project-desc">Recognized for overall excellence in building a high-quality robotics program, including iterative design, comprehensive notebooking, and teamwork.</p>
         <div class="project-tags">
-          <span class="tag">Mechanical Eng.</span><span class="tag">TinkerCAD</span><span class="tag">Energy Systems</span>
+          <span class="tag">Robotics</span><span class="tag">Engineering</span><span class="tag">Design</span>
         </div>
       </div>
+    </div>
+  </div>
+</section>
 
-      <div class="project-card reveal" data-delay="240">
-        <div class="project-number">04</div>
-        <div class="project-title">Rainwater Collection & Filtration System</div>
-        <p class="project-desc">Developed a passive rainwater collection system with a multi-stage drainage path, sediment filter layer, and a sealed fresh-water storage reservoir. Modeled in SketchUp and prototyped at small scale. Documented flow rate, capacity, and filtration efficiency in a technical report.</p>
-        <div class="project-tags">
-          <span class="tag">Environmental Eng.</span><span class="tag">SketchUp</span><span class="tag">Prototyping</span>
-        </div>
+<!-- ═══════════════ LEADERSHIP ═══════════════ -->
+<section class="section" id="leadership">
+  <div class="container">
+    <div class="section-header reveal">
+      <h2 class="section-title">Clubs & Leadership</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="grid about-grid" style="margin-top:2rem;">
+      <div class="about-text reveal">
+        <h3 style="color:var(--gold); font-family:var(--font-display); font-size:1.8rem; margin-bottom:1rem;">Multiplying Impact Through Leadership</h3>
+        <p style="color:var(--gray-light); line-height:1.7;">Beyond the IDE and the breadboard, I believe that true engineering excellence requires communication, teamwork, and the ability to inspire others. At ASCTE, I have actively sought out roles that allow me to mentor peers and lead cross-functional projects.</p>
+        <ul style="list-style: none; padding: 0; margin-top: 1.5rem; color: var(--gray-light); line-height: 1.8;">
+          <li style="margin-bottom: 0.8rem;"><strong style="color:var(--gold);">&middot; ASCTE Student Ambassador:</strong> Represented the school during admission tours, communicating complex STEM curriculum models to prospective families.</li>
+          <li style="margin-bottom: 0.8rem;"><strong style="color:var(--gold);">&middot; Lead Musician (Ministry):</strong> Managed rehearsals, arranged musical sets, and developed strong poise under pressure playing live for large congregations.</li>
+          <li style="margin-bottom: 0.8rem;"><strong style="color:var(--gold);">&middot; Independent Entrepreneur:</strong> Successfully managed inventory, pricing strategy, and customer relations for a seasonal fireworks stand, generating substantive revenue and learning raw negotiation skills.</li>
+        </ul>
       </div>
-
-      <div class="project-card reveal" data-delay="320">
-        <div class="project-number">05</div>
-        <div class="project-title">Local Network Security Scanner</div>
-        <p class="project-desc">Built a Python-based tool that maps active devices on a local network, identifies open ports, and flags common misconfigurations. The script generates a readable report with device fingerprints and risk scores. Designed for ethical, educational cybersecurity use in lab environments.</p>
-        <div class="project-tags">
-          <span class="tag">Python</span><span class="tag">Cybersecurity</span><span class="tag">Linux</span><span class="tag">Networking</span>
-        </div>
-      </div>
-
-      <div class="project-card reveal" data-delay="400">
-        <div class="project-number">06</div>
-        <div class="project-title">Inventory Tracker — Excel Automation</div>
-        <p class="project-desc">Built a fully-featured Excel workbook for the fireworks stand to track live inventory, sales velocity, and restock thresholds. Includes automated low-stock alerts using conditional formatting, a daily sales log, and a profit/margin dashboard — cutting manual tracking time by over 60%.</p>
-        <div class="project-tags">
-          <span class="tag">Excel</span><span class="tag">Business</span><span class="tag">Automation</span>
-        </div>
-      </div>
-
-      <div class="project-card reveal" data-delay="480">
-        <div class="project-number">07</div>
-        <div class="project-title">Room Temperature & Air Quality Monitor</div>
-        <p class="project-desc">Built an IoT-style environmental monitor using a microcontroller, DHT22 temperature/humidity sensor, and a small OLED display. Wrote Python firmware that logs readings every 30 seconds to a CSV file, with threshold alerts that trigger an onboard buzzer. Housed in a 3D-printed enclosure.</p>
-        <div class="project-tags">
-          <span class="tag">Python</span><span class="tag">IoT</span><span class="tag">Embedded Systems</span><span class="tag">3D Print</span>
-        </div>
-      </div>
-
-      <div class="project-card reveal" data-delay="560">
-        <div class="project-number">08</div>
-        <div class="project-title">Phishing Awareness Training Module</div>
-        <p class="project-desc">Created an interactive cybersecurity awareness module in HTML/CSS/JavaScript that simulates a phishing email and walks users through identifying red flags. Designed for school use to help students recognize social engineering tactics. Deployed internally and tested with a class of 30 students.</p>
-        <div class="project-tags">
-          <span class="tag">HTML/CSS/JS</span><span class="tag">Cybersecurity</span><span class="tag">Education</span>
-        </div>
-      </div>
-
-      <div class="project-card reveal" data-delay="640">
-        <div class="project-number">09</div>
-        <div class="project-title">Portfolio Website (This Site)</div>
-        <p class="project-desc">Designed and developed this portfolio from scratch using Jekyll and GitHub Pages. Features a custom black-and-gold aesthetic, particle canvas background, GPU-accelerated animations, IntersectionObserver-based scroll reveals, a typing effect, card tilt interactions, and full mobile responsiveness.</p>
-        <div class="project-tags">
-          <span class="tag">Jekyll</span><span class="tag">HTML/CSS</span><span class="tag">JavaScript</span><span class="tag">GitHub Pages</span>
-        </div>
-      </div>
-
-      <div class="project-card reveal" data-delay="720">
-        <div class="project-number">10</div>
-        <div class="project-title">Hardware-Accelerated Password Cracker</div>
-        <p class="project-desc">Designed a parallel computing setup using a Raspberry Pi cluster and simple GPU offloading to analyze hash breaking efficiency. The project demonstrates a foundational understanding of cryptography, brute-force vulnerabilities, and distributed computing basics.</p>
-        <div class="project-tags">
-          <span class="tag">Cybersecurity</span><span class="tag">Linux</span><span class="tag">Python</span>
-        </div>
-      </div>
-
-      <div class="project-card reveal" data-delay="800">
-        <div class="project-number">11</div>
-        <div class="project-title">Secure Smart Lock Embedded System</div>
-        <p class="project-desc">Built an RFID-based authentication system using an Arduino and an electronic strike plate. The firmware validates keycard IDs against an encrypted local database and logs entry attempts to an external SD card. Features status LEDs and a buzzer for access feedback.</p>
-        <div class="project-tags">
-          <span class="tag">Embedded Systems</span><span class="tag">C++</span><span class="tag">Security</span>
-        </div>
-      </div>
-
-      <div class="project-card reveal" data-delay="880">
-        <div class="project-number">12</div>
-        <div class="project-title">Custom Split Mechanical Keyboard</div>
-        <p class="project-desc">Hand-wired and programmed a custom ergonomic split keyboard. Designed the plate layout in CAD, utilized a Pro Micro microcontroller, and compiled custom QMK firmware to handle layered keymaps. Showcases patience, soldering skills, and embedded software configuration.</p>
-        <div class="project-tags">
-          <span class="tag">Hardware</span><span class="tag">C</span><span class="tag">CAD</span><span class="tag">Ergonomics</span>
-        </div>
-      </div>
-
     </div>
   </div>
 </section>
 
 <!-- ═══════════════ CONTACT ═══════════════ -->
 <section class="section" id="contact">
-  <div class="container">
-    <span class="section-label reveal">Let's Connect</span>
-    <h2 class="reveal">Get In <span class="gold-text">Touch</span></h2>
-    <div class="contact-inner">
-      <div class="contact-info">
-        <div class="contact-item reveal" data-delay="0">
-          <span class="contact-icon">✉</span>
-          <div class="contact-detail">
-            <div class="contact-detail-label">Email</div>
-            <div class="contact-detail-value">jathan.carr@ascte.org</div>
-          </div>
-        </div>
-        <div class="contact-item reveal" data-delay="80">
-          <span class="contact-icon">📱</span>
-          <div class="contact-detail">
-            <div class="contact-detail-label">Phone</div>
-            <div class="contact-detail-value">256-616-2696</div>
-          </div>
-        </div>
-        <div class="contact-item reveal" data-delay="160">
-          <span class="contact-icon">📍</span>
-          <div class="contact-detail">
-            <div class="contact-detail-label">Location</div>
-            <div class="contact-detail-value">Trinity, Alabama</div>
-          </div>
-        </div>
-        <div class="contact-item reveal" data-delay="240">
-          <span class="contact-icon">🎓</span>
-          <div class="contact-detail">
-            <div class="contact-detail-label">School</div>
-            <div class="contact-detail-value">ASCTE — Huntsville, AL</div>
-          </div>
-        </div>
-        <p class="reveal" data-delay="320" style="font-size:0.85rem;margin-top:0.3rem;">References available upon request.</p>
-      </div>
+<div class="container">
+<span class="section-label reveal">Let's Connect</span>
+<h2 class="reveal">Get In <span class="gold-text">Touch</span></h2>
+<div class="contact-inner">
+<div class="contact-info">
+<div class="contact-item reveal" data-delay="0">
 
-      <div class="contact-form reveal" data-delay="100">
-        <div class="form-group">
-          <label class="form-label" for="cname">Your Name</label>
-          <input type="text" id="cname" class="form-input" placeholder="Jane Smith">
-        </div>
-        <div class="form-group">
-          <label class="form-label" for="cemail">Your Email</label>
-          <input type="email" id="cemail" class="form-input" placeholder="jane@example.com">
-        </div>
-        <div class="form-group">
-          <label class="form-label" for="cmsg">Message</label>
-          <textarea id="cmsg" class="form-textarea" placeholder="Tell me about an opportunity or project..."></textarea>
-        </div>
-        <button type="button" class="btn btn-primary" onclick="handleSubmit()" style="align-self:flex-start;">
+<div class="contact-detail">
+<div class="contact-detail-label">Email</div>
+<div class="contact-detail-value">jathan.carr@ascte.org</div>
+</div>
+</div>
+<div class="contact-item reveal" data-delay="80">
+
+<div class="contact-detail">
+<div class="contact-detail-label">Phone</div>
+<div class="contact-detail-value">256-616-2696</div>
+</div>
+</div>
+<div class="contact-item reveal" data-delay="160">
+
+<div class="contact-detail">
+<div class="contact-detail-label">Location</div>
+<div class="contact-detail-value">Trinity, Alabama</div>
+</div>
+</div>
+<div class="contact-item reveal" data-delay="240">
+
+<div class="contact-detail">
+<div class="contact-detail-label">School</div>
+<div class="contact-detail-value">ASCTE — Huntsville, AL</div>
+</div>
+</div>
+<p class="reveal" data-delay="320" style="font-size:0.85rem;margin-top:0.3rem;">References available upon request.</p>
+</div>
+<div class="contact-form reveal" data-delay="100">
+<div class="form-group">
+<label class="form-label" for="cname">Your Name</label>
+<input class="form-input" id="cname" placeholder="Jane Smith" type="text"/>
+</div>
+<div class="form-group">
+<label class="form-label" for="cemail">Your Email</label>
+<input class="form-input" id="cemail" placeholder="jane@example.com" type="email"/>
+</div>
+<div class="form-group">
+<label class="form-label" for="cmsg">Message</label>
+<textarea class="form-textarea" id="cmsg" placeholder="Tell me about an opportunity or project..."></textarea>
+</div>
+<button class="btn btn-primary" onclick="handleSubmit()" style="align-self:flex-start;" type="button">
           Send Message ▸
         </button>
-      </div>
-    </div>
-  </div>
+</div>
+</div>
+</div>
 </section>
 
+<!-- ═══════════════ MODAL ═══════════════ -->
+<div class="modal-overlay" id="modalOverlay">
+<div class="modal-content" id="modalContent">
+<button class="modal-close" id="modalClose">✕</button>
+<div class="modal-body" id="modalBody">
+<h3 class="modal-title" id="mTitle"></h3>
+<div class="modal-meta" id="mMeta"></div>
+<div class="modal-desc" id="mDesc"></div>
+</div>
+</div>
+</div>
 <script>
 function handleSubmit() {
   const name = document.getElementById('cname').value;
@@ -454,7 +544,7 @@ function handleSubmit() {
 
   <!-- Footer -->
   <footer class="footer">
-    <div class="footer-name">Jathan<span>.</span>Carr</div>
+    <div class="footer-name">JC<span>.</span></div>
     <p class="footer-copy">© 2026 · Trinity, Alabama · Built with Jekyll</p>
   </footer>
 
